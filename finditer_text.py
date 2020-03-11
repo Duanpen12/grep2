@@ -165,90 +165,90 @@ for line in my_all_file:
     line = line.strip()
     print(has_an_a_but_not_e(line))
 
-#
-# def has_at_least_two_consecutive(text):
-#     result_list = []
-#     match_list = re.finditer(r'(\w*[aeiou]{2,})\w*', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group(0))
-#         return result_list
-#
-# print("12. has at least 2 consecutive vowels (a,e,i,o,u) like in the word bear")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(has_at_least_two_consecutive(line))
+
+def has_at_least_two_consecutive(text):
+    result_list = []
+    match_list = re.finditer(r'(\w*[aeiou]{2,})\w*', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group(0))
+        return result_list
+
+print("12. has at least 2 consecutive vowels (a,e,i,o,u) like in the word bear")
+for line in my_all_file:
+    line = line.strip()
+    print(has_at_least_two_consecutive(line))
 
 
-# def has_at_least_three_vowels(text):
-#     result_list = []
-#     match_list = re.finditer(r'(\w*[aeiou]){3,}\b', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group(0))
-#         return result_list
-#
-# print("13. has at least 3 vowels")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(has_at_least_three_vowels(line))
-#
-#
-# def had_at_least_six_characters(text):
-#     result_list = []
-#     match_list = re.finditer(r'\b(\w{6,})\b', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group(0))
-#         return result_list
-#
-# print("14. has at least 6 characters")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(had_at_least_six_characters(line))
-#
-#
-# def had_at_exactly_six_characters(text):
-#     result_list = []
-#     match_list = re.finditer(r'\b(\w{6})\b', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group(0))
-#         return result_list
-#
-# print("15. has at exactly 6 characters")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(had_at_exactly_six_characters(line))
-#
-#
-# def all_the_word_with_either_bar_baz(text):
-#     result_list = []
-#     match_list = re.finditer(r'(\w*ba[rz]\w*)\b', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group(0))
-#         return result_list
-#
-# print("16. all the words with either 'Bar' or 'Baz' in them")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(all_the_word_with_either_bar_baz(line))
-#
-#
-# def have_banana_pie_or_apple_pie(text):
-#     result_list = []
-#     match_list = re.finditer(r'\b(.*banana pie.*|.*apple pie.*)\b', text)
-#     if match_list:
-#         for match in match_list:
-#             result_list.append(match.group())
-#         return result_list
-#
-# print("17. all the rows with either 'apple pie' or 'banana pie' in them")
-# for line in my_all_file:
-#     line = line.strip()
-#     print(have_banana_pie_or_apple_pie(line))
-#
+def has_at_least_three_vowels(text):
+    result_list = []
+    match_list = re.finditer(r'(\w*[aeiou]){3,}\b', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group(0))
+        return result_list
+
+print("13. has at least 3 vowels")
+for line in my_all_file:
+    line = line.strip()
+    print(has_at_least_three_vowels(line))
+
+
+def had_at_least_six_characters(text):
+    result_list = []
+    match_list = re.finditer(r'\b(\w{6,})\b', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group(0))
+        return result_list
+
+print("14. has at least 6 characters")
+for line in my_all_file:
+    line = line.strip()
+    print(had_at_least_six_characters(line))
+
+
+def had_at_exactly_six_characters(text):
+    result_list = []
+    match_list = re.finditer(r'\b(\w{6})\b', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group(0))
+        return result_list
+
+print("15. has at exactly 6 characters")
+for line in my_all_file:
+    line = line.strip()
+    print(had_at_exactly_six_characters(line))
+
+
+def all_the_word_with_either_bar_baz(text):
+    result_list = []
+    match_list = re.finditer(r'(\w*ba[rz]\w*)\b', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group(0))
+        return result_list
+
+print("16. all the words with either 'Bar' or 'Baz' in them")
+for line in my_all_file:
+    line = line.strip()
+    print(all_the_word_with_either_bar_baz(line))
+
+
+def have_banana_pie_or_apple_pie(text):
+    result_list = []
+    match_list = re.finditer(r'\b(.*banana pie.*|.*apple pie.*)\b', text)
+    if match_list:
+        for match in match_list:
+            result_list.append(match.group())
+        return result_list
+
+print("17. all the rows with either 'apple pie' or 'banana pie' in them")
+for line in my_all_file:
+    line = line.strip()
+    print(have_banana_pie_or_apple_pie(line))
+
 
 
 
